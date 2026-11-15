@@ -1,0 +1,12 @@
+/* Scripture quotations in sermon notebooks. Uses the theme tokens from secondbrain.css. */
+.verse {
+  margin: 14px 0; padding: 10px 16px 10px 18px; border-left: 3px solid var(--accent);
+  background: var(--sunk); border-radius: 0 8px 8px 0;
+}
+.verse p { margin: 0 0 6px; text-indent: 0; font-style: italic; }
+.verse p:last-of-type { margin-bottom: 0; }
+.verse sup { font-style: normal; font-size: .7em; color: var(--accent); margin-right: 2px; }
+.verse cite { display: block; margin-top: 6px; font: 600 .78rem var(--mono); font-style: normal; color: var(--accent); letter-spacing: .02em; }
+.verse + .verse { margin-top: -4px; }
+.verse.tb { border-left-style: dashed; }
+:root[data-paged] [data-readable] .verse { break-inside: avoid; }
